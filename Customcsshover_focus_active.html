@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customcss Hover, Focus and active</title>
+    <style>
+        body{
+            padding: 1 rem;
+            font-family: sans-serif;
+            background-color: rgb(216, 207, 207);
+        }
+        .container{
+            background-color: rgb(249, 241, 241);
+            padding: 1.5rem;
+            margin: 2rem;
+            border-radius: 0.5rem;
+        }
+        h2{
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        input{
+            border: 1px solid #d2d5db;
+            padding: 0.5;
+            outline: none;
+            transition: all 0.2s ease;
+            border-radius: 0.2rem;
+        }
+        input:hover{
+            border-color: #3b82f6;
+        }
+        input:focus{
+            outline: none;
+            box-shadow: 0 0 0 3px rgb(39, 191, 95);
+        }
+        input:active{
+            border-color: #971c70;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Tailwind Css Hover, Focus, and Active States </h2>
+        <input type="text">
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Css Form States</title>
+    <style>
+        body{
+            padding: 1.5rem;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        /* form spacing (space-y-4) */
+        .form{
+            margin: top 1rem;
+        }
+        /* label */
+        .label{
+            display: block;
+        }
+        .label-text{
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #374151;
+        }
+        .input{
+            margin-top: 0.25rem;
+            display: block;
+            width: 100%;
+            padding: 0.5rem 0.7rem;
+            font-size: 0.875rem;
+            border-radius: 0.375rem;
+            border: 1px solid #d1d5db;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+        /* :placeholder */
+        .input::placeholder{
+            color: #9ca3af;
+        }
+        /* disabled input */
+        .input-disable{
+            background-color: #e5e7eb;
+            border-color: #9ca3af;
+        }
+        .input-disabled{
+            background-color: #f3f4f6;
+            color: #6b7280;
+            border-color: #d1d5db;
+        }
+        .input-disabled:disabled{
+            background-color: #f3f4f6;
+            border-color: #9ca3af;
+        }
+        .input-disabled:focus{
+            border-color: #22c553;
+            box-shadow: 0 0 0 1px #22c553;
+        }
+      .input-orange:invalid{
+        border-color: #f97316;
+        color: #ea580c;
+      }  
+      .btn{
+        background-color: #3b82f6;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 0.375rem;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .btn:hover{
+        background-color: #2563eb;
+      }
+      .btn:focus{
+        outline: none;
+        box-shadow: 0 0 0 2px #3b82f6;
+      }
+    </style>
+</head>
+
+<body>
+    <form class="form">
+        <!-- Displaced Input -->
+        <label class="label">
+            <span class="label-text">Phone Number</span>
+            <input type="text" value="123-456-789" class="input input-disable" placeholder="Phone number">
+        </label>
+        <!-- Required Input -->
+        <label class="label">
+            <span class="label-text">Address</span>
+            <input type="text" required class="input input-green">
+        </label>
+        <!-- Invalid Input -->
+        <label class="label">
+            <span class="label-text">Zip Code</span>
+            <input type="text" pattern="\d{5}" class="input input-orange" placeholder="Enter your zip code">
+        </label>
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</body>
+
+</html>
