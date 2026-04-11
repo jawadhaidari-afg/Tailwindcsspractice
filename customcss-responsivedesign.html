@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customcss Responsive Design</title>
+    <style>
+        .body{
+            background-color: #e5e7eb;
+            padding: 1.5rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .card{
+            max-width: 28rem;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .card:hover{
+            transform: scale(1.05);
+        }
+        @media (min-width:640px){
+            .card{
+                max-width: 32rem;
+            }
+        }
+        @media (min-width: 1024px){
+            .card{
+                max-width: 42rem;
+            }
+        }
+        .card-header{
+            position: relative;
+        }
+        .gradient-bg{
+            position: absolute;
+            inset: 0;
+            height: 10rem;
+            background: linear-gradient(to right, #d8b4fe, #f472b6, #fca5a5 );
+        }
+        @media (min-width:640px){
+            .gardient-bg{
+                height: 14rem;
+            }
+        }
+        .card-content{
+            position: relative;
+            padding: 1.5rem;
+        }
+        @media (min-width:640px){
+            .card-content{
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+            }
+        }
+        .image-container{
+            width: 100%;
+        }
+        @media (min-width:640px){
+            .image-container{
+                width: 33.333%;
+            }
+        }
+        .profile-img{
+            width: 8rem;
+            height: 8rem;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #ffffff;
+            box-shadow: 0 10px 15p rgba(0, 0, 0, 0.2);
+        }
+        @media (min-width:640px){
+            .profile-img{
+                width: 10rem;
+                height: 10rem;
+            }
+        }
+        .text-content{
+            padding: 1.5rem;
+        }
+        @media (min-width:640px){
+            .text-content{
+                width: 66.6667%;
+            }
+        }
+        .title{
+            font-size: 1.875rem;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 0.75rem;
+        }
+        .description{
+            color: #4b5567;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .btn{
+            display: inline-block;
+            background: linear-gradient(to right, #6366f1, #9333ea);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0.10px 15px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .btn:hover{
+            transform: scale(1.05);
+            background: linear-gradient(to right, #4f46e5, #7e22c3);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <div class="card">
+            <div class="card-header">
+                <div class="gradient-bg"></div>
+
+                <div class="card-content">
+                    <div class="image-container">
+                        <img src="" alt="" class="profile-img">
+                    </div>
+
+                    <div class="text-content">
+                        <h2 class="title">Jane Doe</h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ipsam?
+                            Illo est natus voluptatem praesentium eum, cum laboriosam distinctio modi cumque nisi dolore
+                            beatae, temporibus, ipsum accusantium recusandae nesciunt aliquam.</p>
+                        <a href="#">View Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
