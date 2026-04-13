@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom CSS Breakpoint Range</title>
+    <style>
+        body{
+            padding: 1rem;
+        }
+        .box{
+            background-color: #e5e7eb;
+            padding: 1rem;
+            border: 1px solid #9ca3af;
+            border-radius: 0.5rem;
+        }
+        .title{
+            color: #1f2937;
+        }
+        @media (min-width:768px) and (max-with:1023px) {
+            .box{
+                background-color: #93c5fd;
+            }
+            .title{
+                color: white;
+            }
+            .text{
+                color: #1f2937;
+            }
+        }
+        @media (min-width: 2024px) and (max-width: 1279px) {
+            .box{
+                background-color: #863fac;
+            }
+            .title{
+                color: black;
+            }
+            .text{
+                color: #111827;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2 class="title">Responsive background and Text</h2>
+        <p class="text">The background color and text color change based pn screen size ranges</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Responsive Design</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="p-4 m-4 space-y-6">
+    <!-- Range Breakpoint Example -->
+    <div class="bg-gary-200 p-4 border border-gray-400 rounded-lg md:max-lg lg:bg-blue-300 lg:max-xl xl:bg-green-300">
+        <h2 class="text-gray-800 md:max-lg:text-white lg:max-xl:text-black">sm: Responsive Design</h2>
+        <p class="text-gray-600 md:max-lg:text-white lg:max-xl:text-black">Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Iusto tempore saepe quod velit non. Eum deserunt aliquid iste, magnam, dolorem quos a sed
+            hic fuga, quisquam sequi autem tenetur aut.</p>
+    </div>
+
+    <!-- small (sm)ff -->
+    <div class="sm:bg-gray-700 text-green-600 border rounded-xl p-4">
+        <h2 class="sm:bg-pink-500 lg:text-orange-500 font-bold">md: Responsive Design</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto tempore saepe quod velit non. Eum deserunt
+            aliquid iste, magnam, dolorem quos a sed hic fuga, quisquam sequi autem tenetur aut.</p>
+    </div>
+    <!-- Medium (md) -->
+    <div class="max-w-md border rounded-lg p-4 bg-gray-600 ">
+        <h2 class="md:text-4xl bg-gray-900 text-white">lg: Responsive Design</h2>
+        <p class="md:bg-green-200 text-2xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto tempore
+            saepe quod velit non. Eum deserunt aliquid iste, magnam, dolorem quos a sed hic fuga, quisquam sequi autem
+            tenetur aut.</p>
+    </div>
+    <!-- Large (lg) -->
+    <div class="max-w-lg bg-amber-400 border rounded-2xl p-4">
+        <h2 class="lg:text-2xl text-green-300">xl: Responsive Design</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto tempore saepe quod velit non. Eum deserunt
+            aliquid iste, magnam, dolorem quos a sed hic fuga, quisquam sequi autem tenetur aut.</p>
+    </div>
+    <!-- Extra Large (xl) -->
+    <div class="xl:bg-amber-900 border rounded-3xl p-4">
+        <h2 class="xl:text-4xl text-oragne-700">2xl: Responsive Design</h2>
+        <p class="text-2xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto tempore saepe quod velit
+            non. Eum deserunt aliquid iste, magnam, dolorem quos a sed hic fuga, quisquam sequi autem tenetur aut.</p>
+    </div>
+    <!-- 2XLx -->
+    <div class="2xl:bg-purple-300 border rounded-lg p-4">
+        <h2 class="text-4xl text-orange-600 hover:scale-105 hover:text-orange-800">2xl: Responsive Design</h2>
+        <p class="text-xl text-shadow-amber-50 hover:text-blue-500 ">Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Iusto tempore saepe quod velit non. Eum deserunt aliquid iste, magnam, dolorem quos a sed hic fuga,
+            quisquam sequi autem tenetur aut.</p>
+    </div>
+</body>
+
+</html>
