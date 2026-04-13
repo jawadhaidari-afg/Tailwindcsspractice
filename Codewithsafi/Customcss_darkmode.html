@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Css Dark Mode </title>
+    <style>
+        body{
+            background-color: #e5e7eb;
+            padding: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 24px;
+        }
+        .card{
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+        }
+        .light{
+            background-color: #ffffff;
+        }
+        .dark{
+            background-color: #111827;
+        }
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1f2937;
+        }
+        .dark-title{
+            color: #f3f4f6;
+        }
+        .text{
+            line-height: 1.5;
+        }
+        .light-text{
+            color: #4b5563;
+        }
+        .dark-text{
+            color: #9ca3af;
+        }
+        
+    </style>
+</head>
+<body >
+    <div class="grid">
+        <!-- Light Mode Card -->
+        <div class="card light">
+            <h2 class="title">Light Mode</h2>
+            <p class="text light-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nulla eligendi, impedit, dicta, aliquid omnis provident tenetur suscipit animi perferendis eius voluptatum modi. Quis labore possimus non doloribus? Quas, cupiditate.</p>
+        </div>
+
+        <!-- Dark Mode Card -->
+        <div class="card dark">
+            <h2 class="title dark-title">Dark Mode</h2>
+            <p class="text dark-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, ex ipsa. Adipisci rerum ipsum at officia rem, laborum quia recusandae nulla, quam obcaecati eius quasi odit. In odit vel voluptatem.</p>
+        </div>
+    </div>
+</body>
+</html>
